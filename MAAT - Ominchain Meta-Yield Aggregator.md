@@ -4,13 +4,15 @@ Authors: 0xKima, 0xCompose, 0xyz, 0xCrater, 0xCheetos, 0xKubikRubik, 0xMarvin, 0
 
 **Abstract**
 
-MAAT is an omnichain meta-yield aggregator designed to unify and simplify yield generation across multiple blockchain ecosystems. By leveraging cross-chain messaging and value transfer protocols, specifically LayerZero and Stargate, MAAT enables users to access optimized APYs through automatic rebalancing, cross-chain ZAPs, permissionless strategy layer and yield searcher model.
+MAAT is an omnichain meta-yield aggregator created to unify and simplify yield generation across numerous blockchain markets. Leveraging cross-chain messaging and value transfer protocols, specifically LayerZero and Stargate, MAAT allows to access and optimize earnings through automatic in-chain and inter-chain portfolio management.
 
 This paper outlines MAAT's architecture and vision for a fully interoperable DeFi future.
 
 **Introduction**
 
-Current DeFi infrastructure suffers from fragmented liquidity, complex user experiences, and limited cross-chain capabilities. MAAT solves these issues by providing a single, intuitive interface for accessing and managing multi-chain yield strategies. This document details MAAT's motivation, goals, and the technology stack that supports its mission to abstract complexity and maximize capital efficiency.
+Current DeFi infrastructure suffers from fragmented liquidity, complex user experiences, and limited cross-chain capabilities. MAAT solves these issues by providing a single, intuitive interface for accessing and managing yield strategies across all blockchains connected to cross-chain messaging and token bridging solutions.
+
+This document details MAAT's motivation, goals, and the technology stack that supports its mission to abstract complexity and maximize capital efficiency.
 
 **System Architecture**
 
@@ -49,7 +51,7 @@ This layer involves smart contracts that handle deposits, withdrawals, and rebal
 Layer components:
 
 - Vault - a group of ERC4626 standard smart contracts, one on each chain, modified to handle cross-chain operations with synchronized Price Per Share to act as a universal entry/exit point across all chains.
-- Bridge Adapter - a smart contract for unifying multiple cross-chain value transfer protocols (Stargate, CCTP, USDT0, etc.).
+- Bridge Adapter - a smart contract for unifying multiple cross-chain value transfer protocols (Stargate, CCTP, etc.).
 
 This layer is named Execution because it handles all actions necessary to realize decisions made at the Off-Chain Layer by the Commander and Math Module. The Commander passes a decision into the Vault's `execute(Command[])` function in terms of batches of commands.
 
@@ -63,7 +65,7 @@ This layer is named Execution because it handles all actions necessary to realiz
 
 The Strategy layer focuses on management of yield-generating strategies.
 
-This layer unifies interfaces of different DeFi protocols, such as Yearn Finance, Harvest Finance, AAVE, Compound, Stargate, etc., enabling users to access a wide range of yield opportunities.
+This layer unifies interfaces of different DeFi protocols, such as Yearn Finance, Harvest Finance, AAVE, Stargate, etc., enabling users to access a wide range of yield opportunities.
 
 Vault contracts from the Execution Layer distribute funds across Strategies to maximize yield while also trying to diversify risks.
 
@@ -90,9 +92,7 @@ We envision the MAAT Protocol as a framework for everyone to find their own solu
 
 The MAAT Team is the ultimate builder to push forward new paradigms of yield searching, but we understand that this job SHOULD be delegated to others to keep the protocol going.
 
-We've been inspired by the CoW Protocol Solver Model and decided to go with a similar approach. We named it the Yield Searcher Model.
-
-Everyone can participate in the decision-making process of how assets should be distributed, how often in-chain or inter-chain rebalances should occur, how much fee to take, and how to properly build the decision-making module.
+We've been inspired by the CoW Protocol Solver Model and decided to go with a similar approach. We named it the Yield Searcher Model. Everyone can participate in the decision-making process of how assets should be distributed, how often in-chain or inter-chain rebalances should occur, how much fee to take, and how to properly build the decision-making module.
 
 With that goal in mind, we are building the MAAT Vault to be universal, easily deployable, and configurable, allowing everyone to take the initiative and create their own Yield Searching Policies. This enables users to incorporate their vision on where to position themselves on the risk/reward scale.
 
