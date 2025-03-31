@@ -4,7 +4,7 @@ Authors: 0xKima, 0xCompose, 0xyz, 0xCrater, 0xCheetos, 0xKubikRubik, 0xMarvin, 0
 
 **Abstract**
 
-MAAT is an omnichain yield meta-aggregator designed to unify and simplify yield generation across multiple blockchain ecosystems. By leveraging cross-chain messaging and value transfer protocols, specifically LayerZero and Stargate, MAAT enables users to access optimized APYs through automatic rebalancing, cross-chain ZAPs, permissionless strategy layer and yield searcher model.
+MAAT is an omnichain meta-yield aggregator designed to unify and simplify yield generation across multiple blockchain ecosystems. By leveraging cross-chain messaging and value transfer protocols, specifically LayerZero and Stargate, MAAT enables users to access optimized APYs through automatic rebalancing, cross-chain ZAPs, permissionless strategy layer and yield searcher model.
 
 This paper outlines MAAT's architecture and vision for a fully interoperable DeFi future.
 
