@@ -94,6 +94,8 @@ The MAAT Team is the ultimate builder to push forward new paradigms of yield sea
 
 We've been inspired by the CoW Protocol Solver Model and decided to go with a similar approach. We named it the Yield Searcher Model. Everyone can participate in the decision-making process of how assets should be distributed, how often in-chain or inter-chain rebalances should occur, how much fee to take, and how to properly build the decision-making module.
 
+Team of any protocol that has yield-generating smart contracts could build their own Yield Searcher with a focus on their protocol to reuse the cross-chain rebalancing mechanism, eliminating the need to build their own infrastructure. AAVE could create an omnichain supply market that reallocates supply to adjust for spikes in demand on specific blockchain markets.
+
 With that goal in mind, we are building the MAAT Vault to be universal, easily deployable, and configurable, allowing everyone to take the initiative and create their own Yield Searching Policies. This enables users to incorporate their vision on where to position themselves on the risk/reward scale.
 
 We, as the MAAT Team, are going to explore the world of the most crazy, groundbreaking strategies, involving newly created chains, new bridges, and just out-of-the-oven technologies to push progress forward and to have fun in the process.
@@ -116,7 +118,5 @@ MAAT delivers a seamless yield experience by abstracting chain complexity and au
 [5] Yearn Finance. https://yearn.fi
 [6] Harvest Finance. https://harvest.finance
 [7] AAVE. https://aave.com
-[8] Compound. https://compound.finance/
 [9] CCTP. https://www.circle.com/cross-chain-transfer-protocol
-[10] USDT0. https://usdt0.to/
 [11] CoW Protocol. https://cow.fi/
